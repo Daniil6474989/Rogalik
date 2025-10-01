@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>РОГАЛИК</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="game-container">
+        <h1>РОГАЛИК</h1>
+        <div id="stats">
+            <div id="health-bar">Здоровье: <span id="health-value">100%</span></div>
+            <div id="attack-power">Сила удара: <span id="attack-value">10</span></div>
+            <div id="enemies-left">Противников осталось: <span id="enemies-count">10</span></div>
+        </div>
+        <div class="field" id="game-field"></div>
+        <div id="controls">
+            <p>Управление: WASD — движение, Пробел — атака</p>
+        </div>
+    </div>
+
+    <!-- Экран победы/поражения -->
+    <div id="game-over-screen" class="hidden">
+        <div id="game-over-message"></div>
+        <button id="restart-button">Начать заново</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
